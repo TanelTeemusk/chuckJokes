@@ -1,0 +1,20 @@
+PODS:
+  - BadgeSwift (7.0.0)
+  - Disk (0.4.0)
+
+DEPENDENCIES:
+  - BadgeSwift
+  - Disk (~> 0.4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BadgeSwift
+    - Disk
+
+SPEC CHECKSUMS:
+  BadgeSwift: 5cfacfad916d85e2f68d93dbb9ade4e9555903da
+  Disk: ef2956657d5bb56034b38b29b352170165226440
+
+PODFILE CHECKSUM: b3ecdbb472dd8b3a52c3dbeda558bf7aa260bfb9
+
+COCOAPODS: 1.5.3

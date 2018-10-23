@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="CategoryCell" customModule="Chuck_Norris" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBT-Bv-iYW">
+                        <rect key="frame" x="16" y="10" width="42" height="47.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7U-rb-cPU" customClass="BadgeSwift" customModule="BadgeSwift">
+                        <rect key="frame" x="68" y="26.5" width="6" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="badgeColor">
+                                <color key="value" red="0.80265680959187646" green="0.80265680959187646" blue="0.80265680959187646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="D7U-rb-cPU" firstAttribute="centerY" secondItem="JBT-Bv-iYW" secondAttribute="centerY" id="1Xh-9m-FbG"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="JBT-Bv-iYW" secondAttribute="trailing" constant="20" id="1bF-ot-e0a"/>
+                    <constraint firstItem="JBT-Bv-iYW" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-10" id="268-au-Q6w"/>
+                    <constraint firstItem="D7U-rb-cPU" firstAttribute="leading" secondItem="JBT-Bv-iYW" secondAttribute="trailing" constant="10" id="KS4-7b-a5N"/>
+                    <constraint firstItem="JBT-Bv-iYW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="M9k-uQ-sqU"/>
+                    <constraint firstItem="JBT-Bv-iYW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lRi-Jb-Fzl"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D7U-rb-cPU" secondAttribute="trailing" constant="6" id="nJr-gM-UFp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="badge" destination="D7U-rb-cPU" id="thC-2J-t9U"/>
+                <outlet property="labelTitle" destination="JBT-Bv-iYW" id="Ub1-hV-gi7"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="59.370314842578715"/>
+        </tableViewCell>
+    </objects>
+</document>
