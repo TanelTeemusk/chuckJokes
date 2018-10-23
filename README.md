@@ -2,9 +2,7 @@
 # Chuck Norris Jokes
 #### _A simple app displaying chuck norris jokes written in Swift 4_
 
-Support your kid’s well-being and intellectual growth by keeping the screen-time within healthy limits and balanced with learning activities. hoopy is a smart parental control solution for your kid's phone.
-
-Hoopy Parent is a parent iOS app for checking their children screen time and making adjustments to their allowed times and apps.
+This is a quick mockup app which demonstrates how to load data form an API and display it on screen on iOS. Also local storage is used and Cocoapods library management.
 
 ![screenshots](screens.jpg)
 
