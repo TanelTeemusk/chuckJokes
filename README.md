@@ -8,8 +8,8 @@ Hoopy Parent is a parent iOS app for checking their children screen time and mak
 
 ![screenshots](screens.jpg)
 
-Hoopy iOS app is developed using Swift 4 programming language.
-This repository uses GitFlow for development. Master branch is the latest release. All development should be done by branching out from 'develop' branch.
+Chuck Norris iOS app is developed using Swift 4 programming language.
+This repository uses Git Flow for development. Master branch is the latest release. All development should be done by branching out from 'develop' branch.
 
 ## Installation
 
