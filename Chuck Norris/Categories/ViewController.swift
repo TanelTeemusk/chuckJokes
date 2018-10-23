@@ -57,7 +57,6 @@ class ViewController: TableController {
     
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
         performSegue(withIdentifier: "toJokes", sender: nil)
     }
     

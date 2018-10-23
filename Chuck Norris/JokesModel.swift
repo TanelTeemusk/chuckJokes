@@ -23,6 +23,7 @@ class JokesModel: NSObject {
                 do {
                     try Disk.save(favorites, to: .caches, as: "favorites.json")
                 } catch {
+                    print("error: Favorites not saved")
                 }
             }
         }
@@ -33,6 +34,7 @@ class JokesModel: NSObject {
          let retrievedFavorites = try Disk.retrieve("favorites.json", from: .caches, as: [Joke].self)
             self.favorites = retrievedFavorites
         } catch {
+            print("No favorites yet.")
         }
     }
 }
